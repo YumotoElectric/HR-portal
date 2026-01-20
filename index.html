@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Portal - Company Name</title>
+    <title>人事ポータル - 会社名</title>
     <style>
         * {
             margin: 0;
@@ -12,8 +12,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+            line-height: 1.8;
             color: #333;
             background: #f5f5f5;
         }
@@ -297,198 +297,198 @@
 <body>
     <header>
         <div class="container">
-            <h1>HR Portal</h1>
-            <p class="subtitle">Your central hub for all HR resources and information</p>
+            <h1>人事ポータル</h1>
+            <p class="subtitle">人事関連の全てのリソースと情報を一元管理</p>
         </div>
     </header>
 
     <nav>
         <div class="nav-container">
-            <button class="nav-btn active" onclick="showSection('documents')">Document Links</button>
-            <button class="nav-btn" onclick="showSection('directory')">Company Directory</button>
-            <button class="nav-btn" onclick="showSection('pto')">PTO Request</button>
-            <button class="nav-btn" onclick="showSection('manuals')">HR Manuals</button>
+            <button class="nav-btn active" onclick="showSection('documents')">資料リンク</button>
+            <button class="nav-btn" onclick="showSection('directory')">社員名簿</button>
+            <button class="nav-btn" onclick="showSection('pto')">休暇申請</button>
+            <button class="nav-btn" onclick="showSection('manuals')">人事規程</button>
         </div>
     </nav>
 
     <main class="container">
         <!-- Document Links Section -->
         <section id="documents" class="section active">
-            <h2>Document Links</h2>
-            <p>Access important company spreadsheets and documents</p>
+            <h2>資料リンク</h2>
+            <p>重要な社内スプレッドシートおよび資料へのアクセス</p>
             
             <div class="links-grid">
                 <a href="#" class="link-card">
-                    <h3>📊 Employee Database</h3>
-                    <p>Master list of all employees and their information</p>
+                    <h3>📊 従業員データベース</h3>
+                    <p>全従業員のマスターリストと情報</p>
                 </a>
                 <a href="#" class="link-card">
-                    <h3>💰 Payroll Information</h3>
-                    <p>Salary schedules and payroll dates</p>
+                    <h3>💰 給与情報</h3>
+                    <p>給与体系と給与支払日</p>
                 </a>
                 <a href="#" class="link-card">
-                    <h3>📅 PTO Tracker</h3>
-                    <p>Track vacation days and time off</p>
+                    <h3>📅 休暇管理台帳</h3>
+                    <p>有給休暇および休暇取得状況の管理</p>
                 </a>
                 <a href="#" class="link-card">
-                    <h3>🏥 Benefits Overview</h3>
-                    <p>Health insurance and benefits information</p>
+                    <h3>🏥 福利厚生概要</h3>
+                    <p>健康保険および福利厚生に関する情報</p>
                 </a>
                 <a href="#" class="link-card">
-                    <h3>📋 Project Tracker</h3>
-                    <p>Current projects and assignments</p>
+                    <h3>📋 プロジェクト管理表</h3>
+                    <p>現在進行中のプロジェクトと担当業務</p>
                 </a>
                 <a href="#" class="link-card">
-                    <h3>📈 Performance Reviews</h3>
-                    <p>Review schedules and templates</p>
+                    <h3>📈 人事考課資料</h3>
+                    <p>評価スケジュールとテンプレート</p>
                 </a>
             </div>
 
             <div class="placeholder" style="margin-top: 2rem;">
-                Replace the "#" in each link above with your actual Google Sheets URLs
+                上記の各リンクの「#」を実際のGoogleスプレッドシートのURLに置き換えてください
             </div>
         </section>
 
         <!-- Company Directory Section -->
         <section id="directory" class="section">
-            <h2>Company Directory</h2>
-            <p>Find contact information and schedules for all team members</p>
+            <h2>社員名簿</h2>
+            <p>全社員の連絡先情報とスケジュール</p>
             
             <table class="directory-table">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Title</th>
-                        <th>Birthday</th>
-                        <th>Phone</th>
-                        <th>Lunch Break</th>
+                        <th>氏名</th>
+                        <th>役職</th>
+                        <th>生年月日</th>
+                        <th>電話番号</th>
+                        <th>昼休み時間</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>John Smith</td>
-                        <td>CEO</td>
-                        <td>Jan 15</td>
-                        <td>(555) 123-4567</td>
-                        <td>12:00 PM - 1:00 PM</td>
+                        <td>山田 太郎</td>
+                        <td>代表取締役社長</td>
+                        <td>1月15日</td>
+                        <td>03-1234-5678</td>
+                        <td>12:00〜13:00</td>
                     </tr>
                     <tr>
-                        <td>Jane Doe</td>
-                        <td>HR Manager</td>
-                        <td>Mar 22</td>
-                        <td>(555) 234-5678</td>
-                        <td>12:30 PM - 1:30 PM</td>
+                        <td>佐藤 花子</td>
+                        <td>人事部長</td>
+                        <td>3月22日</td>
+                        <td>03-2345-6789</td>
+                        <td>12:30〜13:30</td>
                     </tr>
                     <tr>
-                        <td>Mike Johnson</td>
-                        <td>Operations Lead</td>
-                        <td>Jul 8</td>
-                        <td>(555) 345-6789</td>
-                        <td>11:30 AM - 12:30 PM</td>
+                        <td>鈴木 一郎</td>
+                        <td>業務部長</td>
+                        <td>7月8日</td>
+                        <td>03-3456-7890</td>
+                        <td>11:30〜12:30</td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="placeholder" style="margin-top: 2rem;">
-                Replace the sample data above with your actual employee information
+                上記のサンプルデータを実際の従業員情報に置き換えてください
             </div>
         </section>
 
         <!-- PTO Request Section -->
         <section id="pto" class="section">
-            <h2>PTO Request Form</h2>
-            <p>Submit your time-off request</p>
+            <h2>休暇申請フォーム</h2>
+            <p>休暇取得の申請を行います</p>
 
             <form id="ptoForm">
                 <div class="form-group">
-                    <label for="employeeName">Employee Name</label>
+                    <label for="employeeName">氏名</label>
                     <input type="text" id="employeeName" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="department">Department</label>
+                    <label for="department">所属部署</label>
                     <input type="text" id="department" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="ptoType">Type of Leave</label>
+                    <label for="ptoType">休暇種類</label>
                     <select id="ptoType" required>
-                        <option value="">Select type...</option>
-                        <option value="vacation">Vacation</option>
-                        <option value="sick">Sick Leave</option>
-                        <option value="personal">Personal Day</option>
-                        <option value="other">Other</option>
+                        <option value="">選択してください...</option>
+                        <option value="vacation">年次有給休暇</option>
+                        <option value="sick">病気休暇</option>
+                        <option value="personal">私用休暇</option>
+                        <option value="other">その他</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="startDate">Start Date</label>
+                    <label for="startDate">開始日</label>
                     <input type="date" id="startDate" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="endDate">End Date</label>
+                    <label for="endDate">終了日</label>
                     <input type="date" id="endDate" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="reason">Reason (Optional)</label>
+                    <label for="reason">理由（任意）</label>
                     <textarea id="reason" rows="4"></textarea>
                 </div>
 
-                <button type="submit" class="submit-btn">Submit Request</button>
+                <button type="submit" class="submit-btn">申請を送信</button>
             </form>
 
             <div class="placeholder" style="margin-top: 2rem;">
-                This form currently displays data on submit. You can:<br>
-                1. Create a Google Form and link to it here, OR<br>
-                2. Integrate with Google Sheets using Google Apps Script to automatically save submissions
+                このフォームは現在、送信時にデータを表示します。以下のオプションがあります：<br>
+                1. Googleフォームを作成してここにリンクする、または<br>
+                2. Google Apps Scriptを使用してGoogleスプレッドシートと連携し、自動的に送信内容を保存する
             </div>
         </section>
 
         <!-- HR Manuals Section -->
         <section id="manuals" class="section">
-            <h2>HR Manuals & Rulebooks</h2>
-            <p>Company policies and employee handbooks</p>
+            <h2>人事規程・社内規則</h2>
+            <p>会社の方針および従業員ハンドブック</p>
 
             <ul class="manuals-list">
                 <li class="manual-item">
-                    <h3>Employee Handbook</h3>
-                    <p>Complete guide to company policies, culture, and expectations</p>
-                    <a href="#">📄 View Handbook</a>
+                    <h3>就業規則</h3>
+                    <p>会社の方針、企業文化、および行動規範に関する総合ガイド</p>
+                    <a href="#">📄 就業規則を見る</a>
                 </li>
                 <li class="manual-item">
-                    <h3>Code of Conduct</h3>
-                    <p>Ethical guidelines and behavioral standards</p>
-                    <a href="#">📄 View Code of Conduct</a>
+                    <h3>行動規範</h3>
+                    <p>倫理的ガイドラインおよび行動基準</p>
+                    <a href="#">📄 行動規範を見る</a>
                 </li>
                 <li class="manual-item">
-                    <h3>Safety Policies</h3>
-                    <p>Workplace safety rules and emergency procedures</p>
-                    <a href="#">📄 View Safety Policies</a>
+                    <h3>安全衛生規程</h3>
+                    <p>職場の安全規則および緊急時の手順</p>
+                    <a href="#">📄 安全衛生規程を見る</a>
                 </li>
                 <li class="manual-item">
-                    <h3>IT & Security Guidelines</h3>
-                    <p>Technology usage and data security policies</p>
-                    <a href="#">📄 View IT Guidelines</a>
+                    <h3>IT・セキュリティガイドライン</h3>
+                    <p>技術使用およびデータセキュリティに関する方針</p>
+                    <a href="#">📄 ITガイドラインを見る</a>
                 </li>
                 <li class="manual-item">
-                    <h3>Benefits Guide</h3>
-                    <p>Detailed information about employee benefits and enrollment</p>
-                    <a href="#">📄 View Benefits Guide</a>
+                    <h3>福利厚生ガイド</h3>
+                    <p>従業員福利厚生および加入に関する詳細情報</p>
+                    <a href="#">📄 福利厚生ガイドを見る</a>
                 </li>
             </ul>
 
             <div class="placeholder" style="margin-top: 2rem;">
-                Replace the "#" in each link with your actual document URLs (PDFs, Google Docs, etc.)
+                各リンクの「#」を実際の資料URL（PDF、Googleドキュメントなど）に置き換えてください
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Company Name. All rights reserved.</p>
-            <p>Questions? Contact HR at hr@company.com</p>
+            <p>&copy; 2024 会社名. All rights reserved.</p>
+            <p>ご質問は人事部までお問い合わせください：hr@company.com</p>
         </div>
     </footer>
 
@@ -525,7 +525,7 @@
                 reason: document.getElementById('reason').value
             };
 
-            alert('PTO Request Submitted!\n\nName: ' + formData.name + '\nDates: ' + formData.startDate + ' to ' + formData.endDate + '\n\nNote: This is a demo. Connect to Google Forms or Sheets for actual submission.');
+            alert('休暇申請が送信されました！\n\n氏名：' + formData.name + '\n期間：' + formData.startDate + ' から ' + formData.endDate + '\n\n注：これはデモです。実際の送信にはGoogleフォームまたはスプレッドシートと連携してください。');
             
             this.reset();
         });
