@@ -304,7 +304,7 @@
 
     <nav>
         <div class="nav-container">
-            <button class="nav-btn active" onclick="showSection('documents')">資料リンク</button>
+            <button class="nav-btn active" onclick="showSection('documents')">ダッシュボード</button>
             <button class="nav-btn" onclick="showSection('company-links')">社用リンク</button>
             <button class="nav-btn" onclick="showSection('directory')">社員名簿</button>
             <button class="nav-btn" onclick="showSection('pto')">休暇申請</button>
@@ -313,54 +313,141 @@
     </nav>
 
     <main class="container">
-        <!-- Document Links Section -->
+        <!-- Dashboard Section -->
         <section id="documents" class="section active">
-            <h2>資料リンク</h2>
-            <p>重要な社内スプレッドシートおよび資料へのアクセス</p>
-            
-            <div class="links-grid">
-                <a href="#" class="link-card">
-                    <h3>📊 従業員データベース</h3>
-                    <p>全従業員のマスターリストと情報</p>
-                </a>
-                <a href="#" class="link-card">
-                    <h3>📅 休暇管理台帳</h3>
-                    <p>有給休暇および休暇取得状況の管理</p>
-                </a>
-                <a href="#" class="link-card">
-                    <h3>🏥 福利厚生概要</h3>
-                    <p>健康保険および福利厚生に関する情報</p>
-                </a>
-                <a href="#" class="link-card">
-                    <h3>📈 人事考課資料</h3>
-                    <p>評価スケジュールとテンプレート</p>
-                </a>
+            <h2>社内ダッシュボード</h2>
+            <p>最新のお知らせと重要情報</p>
+
+            <!-- General Announcements/Events -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin-top: 2rem; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: white; border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem;">📢 全体のお知らせ・イベント</h3>
+                
+                <div style="background: rgba(255,255,255,0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: baseline; margin-bottom: 0.5rem;">
+                        <span style="font-size: 1.3rem; font-weight: bold; margin-right: 1rem;">2/2</span>
+                        <span style="font-size: 1.2rem; font-weight: 600;">新社屋への引越</span>
+                    </div>
+                    <p style="margin: 0.5rem 0 0.5rem 0; opacity: 0.95; line-height: 1.6;">新オフィスへの移転作業を行います。当日は業務が一部制限される可能性がございます。</p>
+                    <a href="#" style="color: #fff; text-decoration: underline; font-size: 0.95rem; opacity: 0.9;"></a>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.15); border-radius: 8px; padding: 1.5rem; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: baseline; margin-bottom: 0.5rem;">
+                        <span style="font-size: 1.3rem; font-weight: bold; margin-right: 1rem;">2/19</span>
+                        <span style="font-size: 1.2rem; font-weight: 600;">MVP提出締切</span>
+                    </div>
+                    <p style="margin: 0.5rem 0 0.5rem 0; opacity: 0.95; line-height: 1.6;">今月のMVP推薦を人事部までご提出ください。</p>
+                    <a href="#" style="color: #fff; text-decoration: underline; font-size: 0.95rem; opacity: 0.9;"></a>
+                </div>
+    
             </div>
 
-            <div class="placeholder" style="margin-top: 2rem;">
-                上記の各リンクの「#」を実際のGoogleスプレッドシートのURLに置き換えてください
+            <!-- February Birthdays -->
+            <div style="background: #fff; border: 2px solid #667eea; padding: 2rem; border-radius: 12px; margin-top: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: #667eea; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem;">🎂 2月の誕生日</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+                    <div style="background: #f9f9f9; padding: 1.25rem; border-radius: 8px; border-left: 4px solid #667eea;">
+                        <div style="font-size: 1.1rem; font-weight: bold; color: #667eea; margin-bottom: 0.3rem;">2月5日</div>
+                        <div style="font-size: 1rem; color: #333;">山田 太郎 (営業部)</div>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 1.25rem; border-radius: 8px; border-left: 4px solid #667eea;">
+                        <div style="font-size: 1.1rem; font-weight: bold; color: #667eea; margin-bottom: 0.3rem;">2月14日</div>
+                        <div style="font-size: 1rem; color: #333;">佐藤 花子 (総務部)</div>
+                    </div>
+                    <div style="background: #f9f9f9; padding: 1.25rem; border-radius: 8px; border-left: 4px solid #667eea;">
+                        <div style="font-size: 1.1rem; font-weight: bold; color: #667eea; margin-bottom: 0.3rem;">2月22日</div>
+                        <div style="font-size: 1rem; color: #333;">鈴木 一郎 (製造部)</div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!-- February KPIs -->
+            <div style="background: #fff; border: 2px solid #667eea; padding: 2rem; border-radius: 12px; margin-top: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: #667eea; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem;">📊 2月のKPI</h3>
+                <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: #555;">100万円以上の主要顧客</h4>
+                
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #667eea; color: white;">
+                            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #667eea;">順位</th>
+                            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #667eea;">顧客名</th>
+                            <th style="padding: 1rem; text-align: right; border-bottom: 2px solid #667eea;">売上高</th>
+                            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #667eea;">担当者</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem;">🥇 1位</td>
+                            <td style="padding: 1rem; font-weight: 600;">株式会社ABC商事</td>
+                            <td style="padding: 1rem; text-align: right; font-weight: 600; color: #667eea;">¥3,500,000</td>
+                            <td style="padding: 1rem;">田中 次郎</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem;">🥈 2位</td>
+                            <td style="padding: 1rem; font-weight: 600;">XYZ株式会社</td>
+                            <td style="padding: 1rem; text-align: right; font-weight: 600; color: #667eea;">¥2,800,000</td>
+                            <td style="padding: 1rem;">高橋 美咲</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem;">🥉 3位</td>
+                            <td style="padding: 1rem; font-weight: 600;">DEF工業株式会社</td>
+                            <td style="padding: 1rem; text-align: right; font-weight: 600; color: #667eea;">¥2,100,000</td>
+                            <td style="padding: 1rem;">伊藤 健太</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem;">4位</td>
+                            <td style="padding: 1rem;">GHI商事</td>
+                            <td style="padding: 1rem; text-align: right; color: #667eea;">¥1,750,000</td>
+                            <td style="padding: 1rem;">渡辺 悠斗</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem;">5位</td>
+                            <td style="padding: 1rem;">JKL株式会社</td>
+                            <td style="padding: 1rem; text-align: right; color: #667eea;">¥1,250,000</td>
+                            <td style="padding: 1rem;">中村 愛</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Quick Links to Documents -->
+            <div style="margin-top: 3rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #667eea;">📎 クイックリンク</h3>
+                <div class="links-grid">
+                    <a href="#" class="link-card">
+                        <h3>📊 従業員データベース</h3>
+                        <p>全従業員のマスターリストと情報</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <h3>📅 休暇管理台帳</h3>
+                        <p>有給休暇および休暇取得状況の管理</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <h3>🏥 福利厚生概要</h3>
+                        <p>健康保険および福利厚生に関する情報</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <h3>📈 人事考課資料</h3>
+                        <p>評価スケジュールとテンプレート</p>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Company Links Section -->
+                <!-- Company Links Section -->
         <section id="company-links" class="section">
             <h2>社用リンク</h2>
-            <p>業務に必要な各種リンク集</p>
+            <p>各種リンク集</p>
 
             <div style="margin-top: 2rem;">
                 <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">一般的</h3>
                 <div class="links-grid">
                     <a href="https://script.google.com/macros/s/AKfycbw8-EVpNB5XTUVRGhmQ2S6I-VXKdIN7jqI8yWq6v5WTdBkwGbWBbp_YEHt9-xsmUOt4/exec" class="link-card">
                         <h3>🔗 リンクマネージャー</h3>
-                        <p>全社リンクはこちらです。</p>
-                    </a>
-                    <a href="#" class="link-card">
-                        <h3>🔗 リンク名</h3>
-                        <p>説明文をここに入力</p>
-                    </a>
-                    <a href="#" class="link-card">
-                        <h3>🔗 リンク名</h3>
-                        <p>説明文をここに入力</p>
+                        <p>業務に必要な各種リンク集</p>
                     </a>
                     <a href="#" class="link-card">
                         <h3>🔗 リンク名</h3>
@@ -374,8 +461,8 @@
 
                 <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2.5rem;">営業部</h3>
                 <div class="links-grid">
-                    <a href="https://docs.google.com/spreadsheets/d/1TFufFIX9dEeop4A0FGqe9kx7xvd28aWnfmx8eUnPXuw/edit?gid=1984834957#gid=1984834957" class="link-card">
-                        <h3>🔗 出荷ホワイトボード</h3>
+                    <a href="#" class="link-card">
+                        <h3>🔗 リンク名</h3>
                         <p>説明文をここに入力</p>
                     </a>
                     <a href="#" class="link-card">
@@ -390,8 +477,8 @@
 
                 <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2.5rem;">製造部</h3>
                 <div class="links-grid">
-                    <a href="https://docs.google.com/spreadsheets/d/1b0_j6UoyVBPMgH7SjNQN3rv8pv6LZXEAPS0S_Hta0iU/edit?gid=1826817258#gid=1826817258#" class="link-card">
-                        <h3>🔗 現場ホワイトボード</h3>
+                    <a href="#" class="link-card">
+                        <h3>🔗 リンク名</h3>
                         <p>説明文をここに入力</p>
                     </a>
                     <a href="#" class="link-card">
@@ -406,8 +493,8 @@
 
                 <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2.5rem;">総務部</h3>
                 <div class="links-grid">
-                    <a href="https://docs.google.com/spreadsheets/d/161DtYG0GswpZKSI56PFkx8xWcM6KBlYEr3zC3AyaWr8/edit?gid=102152157#gid=102152157" class="link-card">
-                        <h3>🔗 面談スケジュール</h3>
+                    <a href="#" class="link-card">
+                        <h3>🔗 リンク名</h3>
                         <p>説明文をここに入力</p>
                     </a>
                     <a href="#" class="link-card">
@@ -421,19 +508,25 @@
                 </div>
             </div>
 
-             <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2.5rem;">検査</h3>
+            <!-- Quick Links to Documents -->
+            <div style="margin-top: 3rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #667eea;">📎 クイックリンク</h3>
                 <div class="links-grid">
-                    <a href="https://docs.google.com/spreadsheets/d/1Xvbv_qh6-_T8fSymNTYzVN_73zkFykAYD0hRuxU4Tcc/edit?gid=2131142731#gid=2131142731" class="link-card">
-                        <h3>🔗 検査ホワイトボード</h3>
-                        <p>説明文をここに入力</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1qVhr3kTm89nA45vl3MjoJM55dAaIjLy1XZKDM0sqh30/edit?gid=615369293#gid=615369293" class="link-card">
+                        <h3>📊 従業員データベース</h3>
+                        <p>全従業員のマスターリストと情報</p>
                     </a>
                     <a href="#" class="link-card">
-                        <h3>🔗 リンク名</h3>
-                        <p>説明文をここに入力</p>
+                        <h3>📅 休暇管理台帳</h3>
+                        <p>有給休暇および休暇取得状況の管理</p>
                     </a>
                     <a href="#" class="link-card">
-                        <h3>🔗 リンク名</h3>
-                        <p>説明文をここに入力</p>
+                        <h3>🏥 福利厚生概要</h3>
+                        <p>健康保険および福利厚生に関する情報</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <h3>📈 人事考課資料</h3>
+                        <p>評価スケジュールとテンプレート</p>
                     </a>
                 </div>
             </div>
