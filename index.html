@@ -295,10 +295,16 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>ユモポータル</h1>
-            <p class="subtitle">人事関連のリソースと情報を一元管理</p>
+   <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1>人事ポータル</h1>
+                <p class="subtitle">人事関連の全てのリソースと情報を一元管理</p>
+            </div>
+            <div style="position: relative;">
+                <input type="text" id="search-input" placeholder="検索..." style="padding: 0.75rem 2.5rem 0.75rem 1rem; border: none; border-radius: 25px; font-size: 1rem; width: 250px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <span style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: #667eea; font-size: 1.2rem;">🔍</span>
+            </div>
         </div>
     </header>
 
@@ -659,6 +665,35 @@
             
             this.reset();
         });
+      
+        // Search functionality
+        document.getElementById('search-input').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            // Search through all text content
+            const allSections = document.querySelectorAll('.section');
+            let foundInSection = null;
+            
+            allSections.forEach(section => {
+                const text = section.innerText.toLowerCase();
+                if (text.includes(searchTerm) && searchTerm.length > 0) {
+                    // Highlight found text
+                    if (!foundInSection) {
+                        foundInSection = section.id;
+                    }
+                }
+            });
+            
+            // If search term found, show that section
+            if (foundInSection && searchTerm.length > 2) {
+                showSection(foundInSection);
+                
+                // Scroll to highlight the search term
+                const sectionElement = document.getElementById(foundInSection);
+                sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+        
     </script>
 </body>
 </html>
